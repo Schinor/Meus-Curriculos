@@ -1,4 +1,4 @@
-# Arquivos auxiliares do LaTeX
+# Arquivos auxiliares do LaTeX (raiz)
 *.aux
 *.bbl
 *.blg
@@ -20,8 +20,12 @@
 *.fdb_latexmk
 *.synctex.gz
 *.xdv
-*.pdfsync
 
-# Pastas de build (caso você decida usar no futuro)
-build/
-out/
+# Ignorar lixo caso fique preso dentro da pasta específica de PDFs
+PDFs/*.aux
+PDFs/*.log
+PDFs/*.fdb_latexmk
+PDFs/*.fls
+PDFs/*.synctex.gz
+
+# O arquivo PDFs/Cientista-Dados.pdf NÃO será ignorado, subindo para o GitHub normalmente!
