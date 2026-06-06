@@ -1,89 +1,110 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % ESSENCIAL: Resolve a quebra de caracteres no ATS
+\usepackage{lmodern} % ESSENCIAL: Garante fonte mapeável e selecionável no PDF
 \usepackage[margin=0.8in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage{hyperref}
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,
-    filecolor=black,      
-    urlcolor=black,
-}
+\usepackage[hidelinks]{hyperref} % hidelinks remove a borda ao redor dos links
 
 \titleformat{\section}{\Large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{1ex}{0.8ex}
+\titlespacing{\section}{0pt}{1.5ex}{1ex}
 \setlength{\parindent}{0pt}
-\setlist[itemize]{leftmargin=*}
+\setlist[itemize]{leftmargin=*, nosep, itemsep=0.2em}
 
 \begin{document}
 \pagestyle{empty}
 
 {\centering
 \textbf{\huge Marcio Gabriel Schinor Mazega} \\ \vspace{0.2cm}
-\textit{\large Desenvolvedor Backend e Full Cycle | Dados} \\ \vspace{0.1cm}
+\textit{\large Desenvolvedor Backend e Full Cycle | Dados \& Machine Learning} \\ \vspace{0.1cm}
 Tupã, SP -- Brasil | (14) 99812-6535 | \href{mailto:marciomazegaa@gmail.com}{marciomazegaa@gmail.com} \\
 \href{https://linkedin.com/in/marcio-mazega}{linkedin.com/in/marcio-mazega} | \href{https://github.com/marciomazega}{github.com/marciomazega} \\
 }
 
-\vspace{0.3cm}
+\vspace{0.4cm}
 \section*{RESUMO PROFISSIONAL}
-Desenvolvedor Full Cycle e Engenheiro de Backend com ampla visão do fluxo corporativo, da extração arquitetural de dados à interface com o usuário final. Experiência robusta na construção de APIs escaláveis (FastAPI, Spring Boot) e modelagem profunda de banco de dados (PostgreSQL), aliada ao domínio de frameworks Frontend (React, Angular). Capacidade comprovada de idealizar, estruturar e realizar o deploy de aplicações SaaS, soluções analíticas e rotinas de automação, garantindo alta performance e segurança desde a raiz tecnológica.
+Desenvolvedor Full Cycle e focado em Dados com experiência na construção de APIs escaláveis (FastAPI), modelagem de banco de dados (PostgreSQL) e interfaces modernas (Angular 17+). Históri-
+co de otimização de fluxos analíticos e projetos premiados em inovação (3º lugar no DSIN Coder Challenge, Finalista 16ª FETEPS). Capacidade comprovada de estruturar rotinas de ETL, aplicar soluções de Machine Learning e realizar deploy de aplicações SaaS utilizando ambientes containerizados (Docker
+/WSL2), garantindo performance desde a extração até a interface final.
 
-\vspace{0.1cm}
+\vspace{0.2cm}
 \section*{HABILIDADES TÉCNICAS}
-\begin{itemize}[nosep]
-    \item \textbf{Backend e APIs:} Python (FastAPI), Java (Spring Boot), Node.js, TypeScript, RESTful APIs.
-    \item \textbf{Frontend e Web:} Angular, React, JavaScript, JWT Authentication, Mapas Interativos (Leaflet).
-    \item \textbf{Bancos de Dados e Deploy:} PostgreSQL, MySQL, Docker, Linux (WSL).
-    \item \textbf{Automação e Dados:} Scripts em Python, Integração de Sistemas, Web Scraping, Git / GitHub.
-\end{itemize}
-
-\vspace{0.1cm}
-\section*{EXPERIÊNCIA PROFISSIONAL}
-\textbf{Desenvolvedor Backend e Engenheiro de Dados} \hfill \textit{Fev 2024 -- Jun 2026} \\
-\textit{Gattaz Health -- Remoto} \\
-\begin{itemize}[nosep]
-    \item Criação de APIs RESTful usando FastAPI para unificar ecossistemas analíticos e distribuir dados em larga escala.
-    \item Modelagem física e lógica em banco de dados relacional (PostgreSQL), garantindo a persistência segura e performática dos sistemas backend e ferramentas de BI da companhia.
-    \item Integração de fluxos de backend com sistemas de automação nativos em Python (Web Scraping / rotinas ETL).
+\begin{itemize}
+    \item \textbf{Backend e Dados:} Python (FastAPI, Pandas, Scikit-learn), Java (Spring Boot), TypeScript, Web Scraping, Rotinas ETL.
+    \item \textbf{Frontend:} Angular 17+ (Application Builder), React, JavaScript, Mapas Interativos (Leaflet).
+    \item \textbf{Banco de Dados e Infraestrutura:} PostgreSQL, MySQL, Docker, Linux (Ubuntu/WSL2), Git/GitHub.
+    \item \textbf{Idiomas:} Inglês (Leitura Técnica Avançada e Escrita).
 \end{itemize}
 
 \vspace{0.2cm}
-\textbf{Pesquisador de Iniciação Científica (FAPESP/CNPq)} \hfill \textit{Fev 2025 -- Set 2025} \\
-\textit{Smart B100 e OBA} \\
-\begin{itemize}[nosep]
-    \item Resolução de problemas de modelagem e mapeamento de sistemas interligados através de rigor científico.
+\section*{FORMAÇÃO ACADÊMICA E CERTIFICAÇÕES}
+\textbf{Graduação em Tecnologia em Sistemas Inteligentes (TSI)} \hfill \textit{Jan 2025 -- Dez 2027} \\
+\textit{FATEC Pompéia "Shunji Nishimura"} \\
+\vspace{0.1cm}
+\textbf{Certificações em Destaque:}
+\begin{itemize}
+    \item Introdução ao Machine Learning -- MBA USP/ESALQ (2026)
+    \item Banco de Dados Relacional -- EncData
 \end{itemize}
 
-\vspace{0.1cm}
+\vspace{0.2cm}
+\section*{EXPERIÊNCIA PROFISSIONAL}
+\textbf{Desenvolvedor Full Cycle} \hfill \textit{Fev 2026 -- Jun 2026} \\
+\textit{Gattaz Health} \\
+\begin{itemize}
+    \item Arquitetei e desenvolvi APIs RESTful com FastAPI para unificar ecossistemas analíticos com alta eficiência.
+    \item Construí a interface de gerenciamento interno utilizando Angular 17+ (nova estrutura Application Builder), integrando-a com ferramentas de BI da companhia.
+    \item Estruturou a modelagem física e lógica em PostgreSQL, otimizando e organizando a persistência de dados para sistemas backend e dashboards.
+    \item Automatizou fluxos de extração com scripts Python (Web Scraping e ETL), reduzindo o trabalho manual de coleta de dados em 10 horas semanais.
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Monitor de Iniciação Científica Júnior (ICJr)} \hfill \textit{Jan 2025 -- Mai 2026} \\
+\textit{OBA - Olimpíada Brasileira de Astronomia e Astronáutica} \\
+\begin{itemize}
+    \item Orientei e supervisionei estudantes no desenvolvimento de projetos e correção de relatórios científicos (OBA/OBAFOG).
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Pesquisador de Iniciação Científica (FAPESP)} \hfill \textit{Ago 2025 -- Fev 2026} \\
+\textit{Projeto Smart B100} \\
+\begin{itemize}
+    \item Desenvolveu uma plataforma de pesquisa inteligente capaz de indexar vários artigos e ranquear os 5 melhores artigos científicos utilizando resumos gerados por IA.
+    \item Conduziu pesquisa de mercado no setor AgTech, avaliando e documentando o ecossistema de softwares para elaboração de matriz de competitividade.
+\end{itemize}
+
+\vspace{0.2cm}
 \section*{PROJETOS DE DESTAQUE}
-\textbf{Buscador Inteligente de Artigos}
-\begin{itemize}[nosep]
-    \item \textbf{Stack:} Python, FastAPI, Web Scraping.
-    \item \textbf{Descrição:} Arquitetura de uma ferramenta automatizada para busca e extração de dados em fontes de publicações acadêmicas, conectando motores de scraping com uma API eficiente de resposta rápida.
-\end{itemize}
-\vspace{0.1cm}
-\textbf{Ouvidoria Digital -- Synapse}
-\begin{itemize}[nosep]
-    \item \textbf{Stack:} Angular, Node.js, TypeScript, MySQL.
-    \item \textbf{Descrição:} Solução Full Stack desenvolvida para Zeladoria Municipal que substitui processos em papel por mapas dinâmicos e sistema backend de autenticação (JWT) para gestão pública de chamados.
-\end{itemize}
-\vspace{0.1cm}
-\textbf{Central Agro -- Plataforma SaaS}
-\begin{itemize}[nosep]
-    \item \textbf{Stack:} React, Python, GEE.
-    \item \textbf{Descrição:} Pipeline backend de processamento geoespacial em Python entregue dinamicamente em interfaces frontend React modernas.
+\textbf{Canna (Bengala Multissensorial) -- Projeto IoT} | \textit{Finalista 16ª FETEPS}
+\begin{itemize}
+    \item \textbf{Descrição:} Solução integrada de hardware e software focada em acessibilidade, projetada para processamento sensorial e feedback em tempo real. Reconhecido entre os melhores projetos de inovação tecnológica do estado.
 \end{itemize}
 
-\vspace{0.1cm}
-\section*{FORMAÇÃO ACADÊMICA E PREMIAÇÕES}
-\begin{itemize}[nosep]
-    \item \textbf{Graduação:} Tecnologia em Sistemas Inteligentes (IA e Dados) -- Fatec Shunji Nishimura (Dez 2027)
-    \item \textbf{Premiação:} 3º Lugar -- DSIN Coder Challenge (Desafio de programação do Estado de SP, 2025)
-    \item \textbf{Certificações:} Introdução ao Machine Learning (USP/ESALQ); Banco de Dados Relacional (EncData).
-    \item \textbf{Publicações:} Coautor de 2 capítulos de livros acadêmicos sobre Agronegócio e Sociologia.
+\textbf{Validação de Inovação (Inovaskils 2026) -- Move Intelligence}
+\begin{itemize}
+    \item \textbf{Descrição:} Atuação na validação estrutural e de viabilidade de projetos de inteligência artificial aplicados à saúde e monitoramento, desenvolvidos para a Move (Grupo Movement/Brudden).
+    \item \textbf{Projeto:} Plataforma Full Cycle que análisa e ranquea produtos do eixo Fitness residencial que podem se tornam tendências no Brasil.
+\end{itemize}
+
+\textbf{Ouvidoria Digital -- Synapse} | {Projeto com código privado}
+\begin{itemize}
+    \item \textbf{Stack:} Angular, Node.js, TypeScript, MySQL.
+    \item \textbf{Descrição:} Solução Full Stack desenvolvida, durante o programa Synapse, para Zeladoria Municipal que substituí processos manuais, utilizando mapas dinâmicos e autenticação JWT para gestão pública.
+\end{itemize}
+
+\textbf{Outros Projetos em Destaque no Github:}
+\begin{itemize}
+    \item PRF Analytics Full Cycle (Python, Pandas, PostgreSQL, Web Scraping e Power BI)
+    \item PRF Collision Predictor (Python, Scikit-learn, Pandas e Seaborn ML)
+    \item Task Manager API (Java, Spring Boot, PostgreSQL e Docker)
+\end{itemize}
+
+\vspace{0.2cm}
+\section*{PREMIAÇÕES E PUBLICAÇÕES}
+\begin{itemize}
+    \item \textbf{Premiação:} 3º Lugar -- DSIN Coder Challenge (Desafio estadual de lógica e programação, 2025).
+    \item \textbf{Publicações:} Coautor de 2 capítulos de livros acadêmicos focados em inovação no Agronegócio e perspectivas de Sociologia.
 \end{itemize}
 
 \end{document}
