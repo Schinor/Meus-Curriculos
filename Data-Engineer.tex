@@ -1,21 +1,16 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % ESSENCIAL: Resolve a quebra de caracteres no ATS
+\usepackage{lmodern} % ESSENCIAL: Garante fonte mapeável e selecionável no PDF
 \usepackage[margin=0.8in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage{hyperref}
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,
-    filecolor=black,      
-    urlcolor=black,
-}
+\usepackage[hidelinks]{hyperref} % hidelinks remove a borda ao redor dos links
 
 \titleformat{\section}{\Large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{1ex}{0.8ex}
+\titlespacing{\section}{0pt}{1.5ex}{1ex}
 \setlength{\parindent}{0pt}
-\setlist[itemize]{leftmargin=*}
+\setlist[itemize]{leftmargin=*, nosep, itemsep=0.2em}
 
 \begin{document}
 \pagestyle{empty}
@@ -27,64 +22,79 @@ Tupã, SP -- Brasil | (14) 99812-6535 | \href{mailto:marciomazegaa@gmail.com}{ma
 \href{https://linkedin.com/in/marcio-mazega}{linkedin.com/in/marcio-mazega} | \href{https://github.com/marciomazega}{github.com/marciomazega} \\
 }
 
-\vspace{0.3cm}
+\vspace{0.4cm}
 \section*{RESUMO PROFISSIONAL}
-Engenheiro de Dados com sólida experiência no desenho, orquestração e otimização de fluxos automatizados. Proficiente no desenvolvimento de rotinas de ETL/ELT escaláveis utilizando Python e na construção de arquiteturas de dados resilientes sobre PostgreSQL e MySQL. Foco em integrar múltiplas fontes de dados (Web Scraping, APIs) visando construir Data Lakes ou Data Warehouses consistentes, promovendo inteligência analítica para tomadas de decisão e BI corporativo.
+Engenheiro de Dados com sólida experiência no desenho, orquestração e otimização de pipelines de ponta a ponta. Proficiente no desenvolvimento de rotinas de ETL/ELT escaláveis utilizando Python e na construção de arquiteturas de dados resilientes em PostgreSQL e MySQL. Foco em integrar múltiplas fontes (Web Scraping, APIs RESTful) para alimentar Data Lakes e Data Warehouses consistentes, aplicando rigor em governança e normalização relacional para viabilizar inteligência analítica e painéis de BI corporativo.
 
-\vspace{0.1cm}
+\vspace{0.2cm}
 \section*{HABILIDADES TÉCNICAS}
-\begin{itemize}[nosep]
-    \item \textbf{Engenharia de Dados:} ETL / Pipelines de Dados, Web Scraping, Integração de APIs, Power BI.
-    \item \textbf{Bancos de Dados:} PostgreSQL, MySQL, Modelagem de Dados, Normalização Relacional.
-    \item \textbf{Linguagens e Ferramentas:} Python, Pandas, SQL, Docker, Git / GitHub, Linux (WSL).
-    \item \textbf{Arquitetura:} Design de Schemas de Dados, Infraestrutura Cloud, APIs RESTful.
-\end{itemize}
-
-\vspace{0.1cm}
-\section*{EXPERIÊNCIA PROFISSIONAL}
-\textbf{Engenheiro de Dados e Desenvolvedor Backend} \hfill \textit{Fev 2024 -- Jun 2026} \\
-\textit{Gattaz Health -- Remoto} \\
-\begin{itemize}[nosep]
-    \item Automação ponta a ponta do fluxo de dados através de pipelines ETL desenvolvidos em Python.
-    \item Extração em larga escala de dados através de rotinas de Web Scraping e estruturação via APIs RESTful (FastAPI).
-    \item Liderança no redesign do schema PostgreSQL corporativo, isolando dados clínicos sensíveis e implementando regras de normalização que otimizaram a leitura em painéis analíticos (BI).
+\begin{itemize}
+    \item \textbf{Engenharia de Dados:} ETL / Pipelines de Dados, Web Scraping, Integração de APIs, Data Quality.
+    \item \textbf{Bancos de Dados e Infra:} PostgreSQL, MySQL, Docker, Linux (Ubuntu/WSL2).
+    \item \textbf{Linguagens e Ferramentas:} Python (Pandas, Scikit-learn, FastAPI), SQL, Git / GitHub.
+    \item \textbf{Arquitetura e Visualização:} Modelagem Relacional, APIs RESTful, Power BI, Dashboards.
 \end{itemize}
 
 \vspace{0.2cm}
-\textbf{Pesquisador de Dados AgTech (Bolsista FAPESP)} \hfill \textit{Fev 2025 -- Set 2025} \\
-\textit{Centro Avançado de Pesquisa Smart B100 -- Tupã, SP} \\
-\begin{itemize}[nosep]
-    \item Estruturação de dados brutos provenientes de ecossistemas digitais do agronegócio.
-    \item Aplicação de rigor analítico para organizar e classificar soluções AgTech e dados de Living Labs.
+\section*{EXPERIÊNCIA PROFISSIONAL}
+\textbf{Engenheiro de Dados e Desenvolvedor Backend} \hfill \textit{Fev 2026 -- Jun 2026} \\
+\textit{Gattaz Health} \\
+\begin{itemize}
+    \item Desenvolvi e orquestrei pipelines ETL ponta a ponta em Python, consolidando 100 registros/semana com alta eficiência.
+    \item Automatizei a extração de dados via Web Scraping e estruturou o acesso via APIs RESTful (FastAPI), reduzindo o tempo de coleta manual em 50\%.
+    \item Liderei o redesign físico e lógico do schema corporativo em PostgreSQL, otimizando as consultas para os painéis de BI e isolando dados clínicos sensíveis.
 \end{itemize}
 
-\vspace{0.1cm}
+\vspace{0.2cm}
+\textbf{Monitor de Iniciação Científica Júnior (ICJr)} \hfill \textit{Jan 2025 -- Mai 2026} \\
+\textit{OBA - Olimpíada Brasileira de Astronomia e Astronáutica} \\
+\begin{itemize}
+    \item Orientei e supervisionei estudantes no desenvolvimento de projetos e correção de relatórios científicos (OBA/OBAFOG).
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Pesquisador de Dados AgTech (Bolsista FAPESP)} \hfill \textit{Ago 2025 -- Fev 2026} \\
+\textit{Centro Avançado de Pesquisa Smart B100} \\
+\begin{itemize}
+    \item Aprendi sobre rigor analítico para organizar e classificar soluções tecnológicas, viabilizando métricas de competitividade para o setor.
+\end{itemize}
+
+\vspace{0.2cm}
 \section*{PROJETOS DE DESTAQUE}
-\textbf{PRF Analytics Full Cycle -- Pipeline ETL Histórico}
-\begin{itemize}[nosep]
+\textbf{PRF Analytics Full Cycle -- Pipeline ETL Histórico} | \href{https://github.com/marciomazega}{[Ver no GitHub]}
+\begin{itemize}
     \item \textbf{Stack:} Python, Pandas, PostgreSQL, Web Scraping.
-    \item \textbf{Descrição:} Pipeline completo de ponta a ponta (extração, tratamento, padronização) de dados oriundos da Polícia Rodoviária Federal, finalizando com carregamento otimizado (Load) no PostgreSQL.
-\end{itemize}
-\vspace{0.1cm}
-\textbf{Buscador Inteligente de Artigos Científicos}
-\begin{itemize}[nosep]
-    \item \textbf{Stack:} Python, NLP, Web Scraping, Integração de APIs.
-    \item \textbf{Descrição:} Sistema automatizado para busca, filtragem e recuperação de publicações acadêmicas, otimizando o fluxo de revisão bibliográfica através de algoritmos de extração e análise de texto.
-\end{itemize}
-\vspace{0.1cm}
-\textbf{Central Agro -- Infraestrutura de Dados Geoespaciais}
-\begin{itemize}[nosep]
-    \item \textbf{Stack:} Python, APIs Geoespaciais (Google Earth Engine).
-    \item \textbf{Descrição:} Orquestração e transformação de camadas de dados climáticos e imagens de satélite em um formato tabular consumível para modelos de Machine Learning.
+    \item \textbf{Descrição:} Pipeline completo (extração, tratamento, padronização) processando [X] anos de dados históricos da Polícia Rodoviária Federal, culminando em uma carga otimizada no PostgreSQL pronta para visualização.
 \end{itemize}
 
+\textbf{Buscador Inteligente de Artigos Científicos} | \href{https://github.com/marciomazega}{[Ver no GitHub]}
+\begin{itemize}
+    \item \textbf{Stack:} Python, NLP, FastAPI, Web Scraping.
+    \item \textbf{Descrição:} Arquitetura automatizada para extração e filtragem de [X]+ publicações acadêmicas, conectando motores de scraping com uma API eficiente para otimizar fluxos de revisão bibliográfica.
+\end{itemize}
+
+\textbf{Central Agro -- Infraestrutura de Dados Geoespaciais}
+\begin{itemize}
+    \item \textbf{Stack:} Python, APIs Geoespaciais (Google Earth Engine).
+    \item \textbf{Descrição:} Orquestração e transformação de camadas de dados climáticos e imagens de satélite em matrizes tabulares de [X] linhas, preparadas para ingestão em modelos de Machine Learning.
+\end{itemize}
+
+\vspace{0.2cm}
+\section*{FORMAÇÃO ACADÊMICA E CERTIFICAÇÕES}
+\textbf{Graduação em Tecnologia em Sistemas Inteligentes (TSI)} \hfill \textit{Jan 2025 -- Dez 2027} \\
+\textit{FATEC Pompéia "Shunji Nishimura"} \\
 \vspace{0.1cm}
-\section*{FORMAÇÃO ACADÊMICA E PREMIAÇÕES}
-\begin{itemize}[nosep]
-    \item \textbf{Graduação:} Tecnologia em Sistemas Inteligentes (IA e Dados) -- Fatec Shunji Nishimura (Dez 2027)
-    \item \textbf{Premiação:} 3º Lugar -- DSIN Coder Challenge (Desafio de programação do Estado de SP, 2025)
-    \item \textbf{Certificações:} Introdução ao Machine Learning (USP/ESALQ); Banco de Dados Relacional (EncData).
-    \item \textbf{Publicações:} Coautor de 2 capítulos de livros acadêmicos sobre Agronegócio e Sociologia.
+\textbf{Certificações em Destaque:}
+\begin{itemize}
+    \item Introdução ao Machine Learning -- MBA USP/ESALQ (2026)
+    \item Banco de Dados Relacional -- EncData
+\end{itemize}
+
+\vspace{0.2cm}
+\section*{PREMIAÇÕES E PUBLICAÇÕES}
+\begin{itemize}
+    \item \textbf{Premiação:} 3º Lugar -- DSIN Coder Challenge (Desafio estadual de lógica e programação, 2025).
+    \item \textbf{Publicações:} Coautor de 2 capítulos de livros acadêmicos focados em inovação no Agronegócio e Sociologia.
 \end{itemize}
 
 \end{document}

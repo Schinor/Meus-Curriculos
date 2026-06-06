@@ -1,21 +1,16 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} % ESSENCIAL: Resolve a quebra de caracteres no ATS
+\usepackage{lmodern} % ESSENCIAL: Garante fonte mapeável e selecionável no PDF
 \usepackage[margin=0.8in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
-\usepackage{hyperref}
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=black,
-    filecolor=black,      
-    urlcolor=black,
-}
+\usepackage[hidelinks]{hyperref} % hidelinks remove a borda ao redor dos links
 
 \titleformat{\section}{\Large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{1ex}{0.8ex}
+\titlespacing{\section}{0pt}{1.5ex}{1ex}
 \setlength{\parindent}{0pt}
-\setlist[itemize]{leftmargin=*}
+\setlist[itemize]{leftmargin=*, nosep, itemsep=0.2em}
 
 \begin{document}
 \pagestyle{empty}
@@ -27,64 +22,87 @@ Tupã, SP -- Brasil | (14) 99812-6535 | \href{mailto:marciomazegaa@gmail.com}{ma
 \href{https://linkedin.com/in/marcio-mazega}{linkedin.com/in/marcio-mazega} | \href{https://github.com/marciomazega}{github.com/marciomazega} \\
 }
 
-\vspace{0.3cm}
+\vspace{0.4cm}
 \section*{RESUMO PROFISSIONAL}
-Profissional especializado em Ciência de Dados, com forte viés em modelagem preditiva, processamento de linguagem natural (NLP) e inteligência geoespacial (GIS/AgTech). Experiência comprovada na análise de dados complexos utilizando Python, Pandas e o ecossistema Google Earth Engine, integrando algoritmos de Machine Learning (Scikit-learn) para descoberta de padrões. Trajetória fortalecida por rigor científico adquirido através de pesquisas financiadas (FAPESP e CNPq), aliando a fundamentação acadêmica à capacidade de geração de valor para o negócio.
+Cientista de Dados com forte viés em modelagem preditiva, processamento de linguagem natural (NLP) e inteligência geoespacial (AgTech). Desenvolvo análises complexas utilizando Python e Pandas, integrando algoritmos de Machine Learning (Scikit-learn) para descoberta de padrões e tomada de decisão. Possuo rigor científico validado por pesquisas (FAPESP/CNPq) e experiência corporativa arquitetando pipelines analíticos e validando modelos de Inteligência Artificial, aliando a fundamentação acadêmica à geração direta de valor para o negócio.
 
-\vspace{0.1cm}
+\vspace{0.2cm}
 \section*{HABILIDADES TÉCNICAS}
-\begin{itemize}[nosep]
+\begin{itemize}
     \item \textbf{IA e Machine Learning:} Modelagem Preditiva, Scikit-learn, Algoritmos de Regressão/Classificação, NLP.
-    \item \textbf{Análise de Dados:} Python, Pandas, Numpy, Análise Geoespacial (Google Earth Engine/GIS), Estatística.
-    \item \textbf{Banco de Dados e Infraestrutura:} PostgreSQL, MySQL, Docker, Linux (WSL).
-    \item \textbf{Soft Skills:} Resolução de problemas complexos, Rigor metodológico, Comunicação analítica.
-\end{itemize}
-
-\vspace{0.1cm}
-\section*{EXPERIÊNCIA PROFISSIONAL}
-\textbf{Engenheiro de Dados e Analytics} \hfill \textit{Fev 2024 -- Jun 2026} \\
-\textit{Gattaz Health -- Remoto} \\
-\begin{itemize}[nosep]
-    \item Construção e manutenção de pipelines analíticos para o processamento unificado de bases de dados clínicas.
-    \item Tratamento, higienização e cruzamento de dados sensíveis para consumo eficiente em modelos de BI corporativo.
-    \item Aplicação de técnicas de exploração de dados para garantir a integridade e escalabilidade da análise da empresa.
+    \item \textbf{Análise de Dados:} Python, Pandas, NumPy, Análise Geoespacial (Google Earth Engine/GIS), Estatística.
+    \item \textbf{Banco de Dados e Infraestrutura:} PostgreSQL, MySQL, Docker, Linux (Ubuntu/WSL2).
+    \item \textbf{Ferramentas e Deploy:} Git / GitHub, FastAPI (Deploy de Modelos), Web Scraping.
 \end{itemize}
 
 \vspace{0.2cm}
-\textbf{Pesquisador Científico Júnior (Bolsista FAPESP)} \hfill \textit{Fev 2025 -- Set 2025} \\
-\textit{Centro Avançado de Pesquisa Smart B100 -- Tupã, SP} \\
-\begin{itemize}[nosep]
-    \item Pesquisa voltada a metodologias de Living Labs aplicada a sistemas digitais rurais e tecnologias AgTech.
-    \item Mapeamento e modelagem de soluções orientadas a dados para o aprimoramento do manejo inteligente.
+\section*{EXPERIÊNCIA PROFISSIONAL}
+\textbf{Engenheiro de Dados e Analytics} \hfill \textit{Fev 2026 -- Jun 2026} \\
+\textit{Gattaz Health} \\
+\begin{itemize}
+    \item Construí e orquestrei pipelines analíticos para o processamento unificado de [X] milhões de registros clínicos.
+    \item Tratei, higienizei e cruzei dados sensíveis em PostgreSQL, otimizando o consumo em modelos de BI em [X]\%.
+    \item Apliquei técnicas de exploração e normalização de dados para garantir a integridade e a escalabilidade das análises corporativas.
 \end{itemize}
 
-\vspace{0.1cm}
+\textbf{Validador de Inovação em IA (Projeto)} \hfill \textit{Mai 2026 -- Atual} \\
+\textit{Move Strategy Consulting (Sentinela IA \& Paciente Zero Tracker)} \\
+\begin{itemize}
+    \item Validei a estrutura e a viabilidade técnica de projetos de Inteligência Artificial voltados ao monitoramento e saúde.
+    \item Modelei a arquitetura lógica para sistemas de rastreamento preditivo (Paciente Zero), alinhando requisitos de dados às metas de inovação da companhia.
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Pesquisador Científico (Bolsista FAPESP)} \hfill \textit{Ago 2025 -- Fev 2026} \\
+\textit{Centro Avançado de Pesquisa Smart B100} \\
+\begin{itemize}
+    \item Conduzi pesquisas voltadas a metodologias de Living Labs, analisando [X] bases de dados de sistemas digitais rurais.
+    \item Mapeei e modelei soluções AgTech orientadas a dados, criando matrizes de competitividade para o aprimoramento do manejo inteligente.
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Monitor de Iniciação Científica (ICJr)} \hfill \textit{Jan 2025 -- Mai 2026} \\
+\textit{OBA - Olimpíada Brasileira de Astronomia e Astronáutica} \\
+\begin{itemize}
+    \item Liderei a análise estatística de dados experimentais, garantindo a precisão metodológica nos projetos de [X] alunos.
+\end{itemize}
+
+\vspace{0.2cm}
 \section*{PROJETOS DE DESTAQUE}
-\textbf{Buscador Inteligente de Artigos Acadêmicos}
-\begin{itemize}[nosep]
-    \item \textbf{Stack:} Python, NLP, Web Scraping.
-    \item \textbf{Descrição:} Solução criada para realizar varredura, leitura analítica e indexação inteligente de artigos científicos, otimizando o fluxo de descoberta de literatura relevante por meio de algoritmos automatizados.
-\end{itemize}
-\vspace{0.1cm}
-\textbf{Central Agro -- Inteligência Agronômica Geoespacial}
-\begin{itemize}[nosep]
-    \item \textbf{Stack:} Python, Google Earth Engine (GEE), Scikit-learn.
-    \item \textbf{Descrição:} Solução preditiva capaz de cruzar Índices de Vegetação (NDVI) extraídos de satélite com variáveis meteorológicas, gerando insights antecipados e mitigando riscos agrícolas para produtores.
-\end{itemize}
-\vspace{0.1cm}
-\textbf{PRF Collision Predictor -- Modelo de Risco Rodoviário}
-\begin{itemize}[nosep]
-    \item \textbf{Stack:} Python, Pandas, Seaborn, Scikit-learn.
-    \item \textbf{Descrição:} Desenvolvimento de modelos de ML para prever a severidade de acidentes rodoviários, identificando padrões espaciais e temporais (Hot Zones).
+\textbf{Buscador Inteligente de Artigos Acadêmicos} | \href{https://github.com/marciomazega}{[Ver no GitHub]}
+\begin{itemize}
+    \item \textbf{Stack:} Python, NLP, FastAPI, Web Scraping.
+    \item \textbf{Descrição:} Desenvolvi uma solução automatizada para realizar varredura, extração e indexação inteligente de mais de [X] publicações, utilizando processamento de linguagem natural (NLP) para otimizar fluxos de revisão bibliográfica.
 \end{itemize}
 
+\textbf{Central Agro -- Inteligência Agronômica Geoespacial}
+\begin{itemize}
+    \item \textbf{Stack:} Python, Google Earth Engine (GEE), Scikit-learn.
+    \item \textbf{Descrição:} Criei um pipeline preditivo capaz de cruzar Índices de Vegetação (NDVI) extraídos de satélite com variáveis meteorológicas, gerando insights antecipados para mitigação de riscos agrícolas.
+\end{itemize}
+
+\textbf{PRF Collision Predictor -- Modelo de Risco Rodoviário} | \href{https://github.com/marciomazega}{[Ver no GitHub]}
+\begin{itemize}
+    \item \textbf{Stack:} Python, Pandas, Seaborn, Scikit-learn.
+    \item \textbf{Descrição:} Treinei e avaliei modelos de Machine Learning de classificação e regressão para prever a severidade de acidentes rodoviários com base em padrões espaciais e temporais históricos.
+\end{itemize}
+
+\vspace{0.2cm}
+\section*{FORMAÇÃO ACADÊMICA E CERTIFICAÇÕES}
+\textbf{Graduação em Tecnologia em Sistemas Inteligentes (TSI)} \hfill \textit{Jan 2025 -- Dez 2027} \\
+\textit{FATEC Pompéia "Shunji Nishimura"} \\
 \vspace{0.1cm}
-\section*{FORMAÇÃO ACADÊMICA E PREMIAÇÕES}
-\begin{itemize}[nosep]
-    \item \textbf{Graduação:} Tecnologia em Sistemas Inteligentes (IA e Dados) -- Fatec Shunji Nishimura (Dez 2027)
-    \item \textbf{Premiação:} 3º Lugar -- DSIN Coder Challenge (Desafio de programação do Estado de SP, 2025)
-    \item \textbf{Certificações:} Introdução ao Machine Learning (USP/ESALQ); Banco de Dados Relacional (EncData).
-    \item \textbf{Publicações:} Coautor de 2 capítulos de livros acadêmicos sobre Agronegócio e Sociologia.
+\textbf{Certificações em Destaque:}
+\begin{itemize}
+    \item Introdução ao Machine Learning -- MBA USP/ESALQ (2026)
+    \item Banco de Dados Relacional -- EncData
+\end{itemize}
+
+\vspace{0.2cm}
+\section*{PREMIAÇÕES E PUBLICAÇÕES}
+\begin{itemize}
+    \item \textbf{Premiação:} 3º Lugar -- DSIN Coder Challenge (Desafio estadual de lógica e programação, 2025).
+    \item \textbf{Publicações:} Coautor de 2 capítulos de livros acadêmicos sobre Inovação no Agronegócio e Sociologia.
 \end{itemize}
 
 \end{document}
